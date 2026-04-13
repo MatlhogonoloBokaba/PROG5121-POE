@@ -39,7 +39,7 @@ public class AccountLogin {
          }else {
              System.out.println("Password is not correctly formatted;please ensure that the password contains atleast eight characters,a capital letter,a number,,and a special character.");
          }
-         
+
          System.out.println("Enter your number: ");
          String number = myInput.nextLine();
          
@@ -47,8 +47,8 @@ public class AccountLogin {
          
          Pattern pattern = Pattern.compile(regex);
          Matcher matcher= pattern.matcher(number);
-         
-         
+
+        // Check if User inputs meet the requirements
          if(checkCellPhoneNumber(number)) {
              System.out.println("Cell phone number successfully added.");
          }else {
